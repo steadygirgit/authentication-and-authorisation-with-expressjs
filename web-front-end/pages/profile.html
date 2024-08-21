@@ -25,7 +25,7 @@
 
     <script>
         async function loadUserProfile() {
-            const response = await fetch('http://127.0.0.1:4001/auth/user',{
+            const response = await fetch('http://127.0.0.1:5000/auth/user',{
                 credentials:"include"
             });
             const user = (await response.json())?.payload;
