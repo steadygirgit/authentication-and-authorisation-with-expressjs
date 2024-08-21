@@ -29,7 +29,7 @@
 
     <script>
         async function loadUser(userId) {
-            const response = await fetch(`http://127.0.0.1:4001/admin/user/id/${userId}`,{
+            const response = await fetch(`http://127.0.0.1:5500/admin/user/id/${userId}`,{
                 credentials:"include"
             });
             const user = (await response.json())?.payload;
